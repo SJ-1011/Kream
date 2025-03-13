@@ -2,15 +2,15 @@ import { defineConfig } from 'vite';
 import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
-	plugins: [
-    tailwindcss(),
-  ],
+  plugins: [tailwindcss()],
   build: {
     rollupOptions: {
       input: {
         index: 'index.html', // 기본 index.html
-        button: 'src/components/button.html',
-        login: 'src/pages/login.html',
+        navigation: 'src/components/navigation.html',
+        productcard: 'src/components/product-card.html',
+        recommandcard: 'src/components/recommand-card.html',
+        recommandimg: 'src/components/recommand-img.html',
       },
     },
   },
