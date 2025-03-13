@@ -1,0 +1,32 @@
+@import 'tailwindcss';
+
+@theme {
+  /* 배너 이미지 */
+  --swiper-banner: url(./assets/kream/swiper/webp/sm-slide-01.webp);
+  --swiper-banner-wide: url(./assets/kream/swiper/webp/lg-slide-01.webp);
+
+  --color-kream-green: #58dc76;
+  --color-kream-red: #b02c20;
+}
+
+@layer components {
+  .nav-flex {
+    @apply flex flex-row flex-nowrap items-center;
+  }
+  .recommand-card {
+    @apply flex flex-col gap-3;
+    .figure-card {
+      @apply flex flex-col flex-nowrap items-center gap-2 text-xs;
+    }
+    figcaption {
+      @apply text-center;
+    }
+    .img-card {
+      @apply object-contain rounded-[50%] aspect-square w-auto md:aspect-auto md:rounded-lg bg-gray-200 md:min-h-[75px] md:max-h-[100px];
+    }
+  }
+
+  .new-dot {
+    @apply size-2 bg-kream-red rounded-[50%] absolute top-[-3px] right-[-8.5px];
+  }
+}

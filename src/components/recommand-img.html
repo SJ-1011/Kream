@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>추천 이미지</title>
+    <link
+      rel="preload"
+      as="font"
+      href="/font/pretendard/woff2/PretendardVariable.woff2"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" as="style" href="/font/pretendard/pretendardvariable.css" />
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body>
+    <!-- 이미지 -->
+    <div class="bg-[#5C8D93] w-full relative">
+      <a href="/">
+        <img
+          class="max-h-[480px] md:hidden mx-auto"
+          src="/src/assets/kream/swiper/webp/sm-slide-01.webp"
+          alt="아이앱의 오사카 첫 팝업"
+        />
+      </a>
+      <a href="/">
+        <img
+          class="hidden max-h-[480px] md:block mx-auto"
+          src="/src/assets/kream/swiper/webp/lg-slide-01.webp"
+          alt="아이앱의 오사카 첫 팝업"
+        />
+      </a>
+      <!-- 화살표 -->
+      <div class="flex justify-between px-[5%] absolute w-full top-[calc(50%_-_24px)]">
+        <button type="button">
+          <svg
+            width="48"
+            height="48"
+            viewBox="0 0 48 48"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_2001_651)">
+              <path
+                d="M35.54 7.54L32 4L12 24L32 44L35.54 40.46L19.08 24L35.54 7.54Z"
+                fill="white"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_2001_651">
+                <rect width="48" height="48" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+        </button>
+        <button type="button">
+          <svg
+            width="48"
+            height="48"
+            viewBox="0 0 48 48"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_2001_655)">
+              <path
+                d="M12.46 40.46L16 44L36 24L16 4L12.46 7.54L28.92 24L12.46 40.46Z"
+                fill="white"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_2001_655">
+                <rect width="48" height="48" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+        </button>
+      </div>
+      <!-- swiper 탭 -->
+      <div class="flex gap-3 absolute left-2/4 transform -translate-x-1/2 bottom-5">
+        <div class="size-4 rounded-[50%] bg-gray-300"></div>
+        <div class="size-4 rounded-[50%] bg-gray-800"></div>
+        <div class="size-4 rounded-[50%] bg-gray-300"></div>
+        <div class="size-4 rounded-[50%] bg-gray-300"></div>
+      </div>
+    </div>
+  </body>
+</html>

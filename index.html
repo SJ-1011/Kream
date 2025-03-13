@@ -1,0 +1,751 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KREAM</title>
+    <link
+      rel="preload"
+      as="font"
+      href="/font/pretendard/woff2/PretendardVariable.woff2"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" as="style" href="/font/pretendard/pretendardvariable.css" />
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body>
+    <h1 class="sr-only">KREAM - 한정판 거래의 FLEX</h1>
+    <header class="flex flex-col flex-nowrap gap-5 my-5 max-w-[1280px] mx-auto">
+      <!-- 메인 내비게이션 -->
+      <nav class="main-nav order-1 mx-5">
+        <ul class="nav-flex gap-7 text-xl">
+          <li class="mr-auto">
+            <a href="/" class="kream--logo inline-flex align-middle">
+              <svg
+                class="block"
+                xmlns="http://www.w3.org/2000/svg"
+                width="134"
+                height="22"
+                viewBox="0 0 134 22"
+                fill="none"
+              >
+                <title>크림</title>
+                <path
+                  d="M107.536 0.288574L101.235 21.7118H107.956L111.737 9.73998L113.627 18.3513H117.408L124.339 9.73998L120.978 21.5017H127.699L134 0.288574H126.649L118.458 10.16H117.408L115.097 0.288574H107.536Z"
+                  fill="#303033"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M73.931 21.5017L74.7712 18.3512L88.0031 0.498535H96.8244L99.3448 18.3512L98.2947 21.5017H92.2038L91.9937 18.3512H82.9624L80.8621 21.5017H73.931ZM86.7429 12.8904H91.5737L91.1536 6.37941L86.7429 12.8904Z"
+                  fill="#303033"
+                />
+                <path
+                  d="M51.4577 21.5017L57.7586 0.498535H77.5016L76.4514 4.06907L73.9311 5.95935H62.7994L62.1693 8.05966H75.1912L73.511 13.7305H60.4891L59.859 15.8308H72.8809L70.9906 21.5017H51.4577Z"
+                  fill="#303033"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M31.7147 0.288574L25.6238 21.7118H32.3448L34.6552 13.9406H37.8057L42.2163 21.7118H47.6771L48.9373 18.3513L45.9969 13.9406C47.3271 14.0106 50.1975 13.3525 51.0376 10.16L52.2978 5.53936C52.5779 3.7891 52.4658 0.288574 49.7774 0.288574H31.7147ZM36.9655 5.95942L36.1254 8.68983H44.5267L45.3668 5.95942H36.9655Z"
+                  fill="#303033"
+                />
+                <path
+                  d="M0 21.7118L6.51097 0.288574H13.232L10.9216 7.8497H15.5423L22.4734 0.288574H28.9843L28.1442 3.43904L21.0031 10.5801L23.5235 18.3513L22.4734 21.7118H17.0125L14.7022 13.7306H9.03135L6.93103 21.7118H0Z"
+                  fill="#303033"
+                />
+              </svg>
+            </a>
+          </li>
+          <li class="hidden md:block"><a href="/">HOME</a></li>
+          <li class="hidden md:block"><a href="/">STYLE</a></li>
+          <li class="hidden md:block"><a href="/">SHOP</a></li>
+          <li>
+            <a href="/">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="hidden md:block"
+              >
+                <g clip-path="url(#clip0_4142_585)">
+                  <path
+                    d="M15.5 14H14.71L14.43 13.73C15.41 12.59 16 11.11 16 9.5C16 5.91 13.09 3 9.5 3C5.91 3 3 5.91 3 9.5C3 13.09 5.91 16 9.5 16C11.11 16 12.59 15.41 13.73 14.43L14 14.71V15.5L19 20.49L20.49 19L15.5 14ZM9.5 14C7.01 14 5 11.99 5 9.5C5 7.01 7.01 5 9.5 5C11.99 5 14 7.01 14 9.5C14 11.99 11.99 14 9.5 14Z"
+                    fill="#1F1F21"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_4142_585">
+                    <rect width="24" height="24" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+            <a href="/">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="md:hidden"
+              >
+                <g clip-path="url(#clip0_4142_279)">
+                  <path
+                    d="M12 22C13.1 22 14 21.1 14 20H10C10 21.1 10.9 22 12 22ZM18 16V11C18 7.93 16.37 5.36 13.5 4.68V4C13.5 3.17 12.83 2.5 12 2.5C11.17 2.5 10.5 3.17 10.5 4V4.68C7.64 5.36 6 7.92 6 11V16L4 18V19H20V18L18 16ZM16 17H8V11C8 8.52 9.51 6.5 12 6.5C14.49 6.5 16 8.52 16 11V17Z"
+                    fill="black"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_4142_279">
+                    <rect width="24" height="24" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- 상단 내비게이션 -->
+      <nav class="hidden md:block top-nav mx-5">
+        <ul class="nav-flex gap-5 text-xs justify-end">
+          <li><a href="/">고객센터</a></li>
+          <li><a href="/">마이페이지</a></li>
+          <li><a href="/">관심</a></li>
+          <li><a href="/">알림</a></li>
+          <li><a href="/">로그인</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- 추천탭 내비게이션 -->
+      <div class="max-w-[1280px] mx-auto">
+        <nav class="recommend-nav ml-5">
+          <ul class="nav-flex gap-7 text-xl">
+            <li class="font-bold mt-[-4px] border-b-4 relative">
+              <a href="/">추천</a>
+              <div class="hidden new-dot"></div>
+            </li>
+            <li class="relative">
+              <a href="/">랭킹</a>
+              <div class="new-dot"></div>
+            </li>
+            <li class="relative">
+              <a href="/">럭셔리</a>
+              <div class="hidden new-dot"></div>
+            </li>
+            <li class="relative">
+              <a href="/">남성</a>
+              <div class="hidden new-dot"></div>
+            </li>
+            <li class="relative">
+              <a href="/">여성</a>
+              <div class="hidden new-dot"></div>
+            </li>
+            <li class="relative">
+              <a href="/">발견</a>
+              <div class="hidden new-dot"></div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- 추천탭 이미지 -->
+      <div class="bg-[#5C8D93] w-full relative mb-7">
+        <a href="/">
+          <img
+            class="max-h-[480px] object-contain md:hidden mx-auto"
+            src="/src/assets/kream/swiper/webp/sm-slide-01.webp"
+            alt="아이앱의 오사카 첫 팝업"
+          />
+        </a>
+        <a href="/">
+          <img
+            class="hidden max-h-[480px] object-contain md:block mx-auto"
+            src="/src/assets/kream/swiper/webp/lg-slide-01.webp"
+            alt="아이앱의 오사카 첫 팝업"
+          />
+        </a>
+        <!-- 화살표 -->
+        <div class="flex justify-between px-[5%] absolute w-full top-[calc(50%_-_24px)]">
+          <button type="button">
+            <svg
+              width="48"
+              height="48"
+              viewBox="0 0 48 48"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_2001_651)">
+                <path
+                  d="M35.54 7.54L32 4L12 24L32 44L35.54 40.46L19.08 24L35.54 7.54Z"
+                  fill="white"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_2001_651">
+                  <rect width="48" height="48" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </button>
+          <button type="button">
+            <svg
+              width="48"
+              height="48"
+              viewBox="0 0 48 48"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_2001_655)">
+                <path
+                  d="M12.46 40.46L16 44L36 24L16 4L12.46 7.54L28.92 24L12.46 40.46Z"
+                  fill="white"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_2001_655">
+                  <rect width="48" height="48" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </button>
+        </div>
+        <!-- swiper 탭 -->
+        <div class="flex gap-3 absolute left-2/4 transform -translate-x-1/2 bottom-5">
+          <div class="size-4 rounded-[50%] bg-gray-300"></div>
+          <div class="size-4 rounded-[50%] bg-gray-800"></div>
+          <div class="size-4 rounded-[50%] bg-gray-300"></div>
+          <div class="size-4 rounded-[50%] bg-gray-300"></div>
+        </div>
+      </div>
+
+      <!-- 추천 상품 목록 -->
+      <div class="recommand-card my-9 w-full max-w-[1280px] mx-auto">
+        <ul class="flex gap-4 mx-auto">
+          <li>
+            <figure class="figure-card">
+              <a href="/">
+                <img
+                  class="img-card"
+                  src="/src/assets/kream/recommand/webp/recommand-product-01.webp"
+                  alt="남성 추천 상품"
+                />
+              </a>
+              <figcaption>남성추천</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure class="figure-card">
+              <a href="/">
+                <img
+                  class="img-card"
+                  src="/src/assets/kream/recommand/webp/recommand-product-02.webp"
+                  alt="여성 추천 상품"
+                />
+                <figcaption>여성추천</figcaption>
+              </a>
+            </figure>
+          </li>
+          <li>
+            <figure class="figure-card">
+              <a href="/">
+                <img
+                  class="img-card"
+                  src="/src/assets/kream/recommand/webp/recommand-product-03.webp"
+                  alt="색다른 추천 상품"
+                />
+                <figcaption>색다른 추천</figcaption>
+              </a>
+            </figure>
+          </li>
+          <li>
+            <figure class="figure-card">
+              <a href="/">
+                <img
+                  class="img-card"
+                  src="/src/assets/kream/recommand/webp/recommand-product-04.webp"
+                  alt="정가보다 저렴한 상품"
+                />
+                <figcaption>정가 아래</figcaption>
+              </a>
+            </figure>
+          </li>
+          <li>
+            <figure class="figure-card">
+              <a href="/">
+                <img
+                  class="img-card"
+                  src="/src/assets/kream/recommand/webp/recommand-product-05.webp"
+                  alt="트루릴리전, 소버 콜라보"
+                />
+                <figcaption>트루릴리전 X 소버</figcaption>
+              </a>
+            </figure>
+          </li>
+        </ul>
+        <ul class="flex gap-4 mx-auto">
+          <li>
+            <figure class="figure-card">
+              <a href="/">
+                <img
+                  class="img-card"
+                  src="/src/assets/kream/recommand/webp/recommand-product-06.webp"
+                  alt="구해요 상품"
+                />
+                <figcaption>구해요</figcaption>
+              </a>
+            </figure>
+          </li>
+          <li>
+            <figure class="figure-card">
+              <a href="/">
+                <img
+                  class="img-card"
+                  src="/src/assets/kream/recommand/webp/recommand-product-07.webp"
+                  alt="Kream 카드 상품"
+                />
+                <figcaption>KREAM 카드</figcaption>
+              </a>
+            </figure>
+          </li>
+          <li>
+            <figure class="figure-card">
+              <a href="/">
+                <img
+                  class="img-card"
+                  src="/src/assets/kream/recommand/webp/recommand-product-08.webp"
+                  alt="봄 출근룩 상품"
+                />
+                <figcaption>봄 출근룩</figcaption>
+              </a>
+            </figure>
+          </li>
+          <li>
+            <figure class="figure-card">
+              <a href="/">
+                <img
+                  class="img-card"
+                  src="/src/assets/kream/recommand/webp/recommand-product-09.webp"
+                  alt="인기있는 일본 브랜드 상품"
+                />
+                <figcaption>인기 일본 브랜드</figcaption>
+              </a>
+            </figure>
+          </li>
+          <li>
+            <figure class="figure-card">
+              <a href="/">
+                <img
+                  class="img-card"
+                  src="/src/assets/kream/recommand/webp/recommand-product-10.webp"
+                  alt="이유 있는 베스트 상품"
+                />
+                <figcaption>이유 있는 베스트</figcaption>
+              </a>
+            </figure>
+          </li>
+        </ul>
+      </div>
+
+      <hr class="max-w-[1280px] mx-auto" />
+
+      <div class="flex flex-col flex-nowrap gap-7 my-9 max-w-[1280px] mx-auto">
+        <div class="ml-4">
+          <h2 class="text-xl font-bold">Just Dropped</h2>
+          <p>발매 상품</p>
+        </div>
+        <ul class="flex overflow-hidden gap-3 mx-4">
+          <li>
+            <article class="flex flex-col gap-3 min-w-[180px] max-w-[240px]">
+              <a href="/" class="contents">
+                <div class="flex flex-col">
+                  <h2 class="text-2xl font-bold">Problemallways</h2>
+                  <p class="text-sm">Problemallways Logo Denim Pocket Camp Cap Blue</p>
+                </div>
+                <div class="flex gap-1.5">
+                  <span
+                    class="text-sm inline-flex items-center justify-center gap-1 rounded-sm border border-current p-1 align-middle"
+                    >적립</span
+                  >
+                  <span
+                    class="text-kream-green text-sm inline-flex items-center justify-center gap-1 rounded-sm border border-current p-1 align-middle"
+                  >
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M9.625 1.16669H5.54167L3.5 7.58335H6.41667L4.375 12.8334H5.25L9.91667 6.41669H7.29167L9.625 1.16669Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                    빠른 배송
+                  </span>
+                </div>
+                <div class="flex flex-wrap gap-x-3">
+                  <span class="text-kream-red text-2xl font-bold not-italic"
+                    >10%<span class="sr-only">할인</span></span
+                  >
+                  <span class="text-sm order-1 w-full">구매가</span>
+                  <span class="text-2xl font-bold">76,500원</span>
+                </div>
+              </a>
+              <div class="relative -order-1">
+                <a href="/" class="bg-gray-200 block rounded-lg">
+                  <img
+                    src="/src/assets/kream/just-dropped/webp/dropped-product-01.webp"
+                    alt="Problemallways 상품"
+                  />
+                </a>
+                <button
+                  type="button"
+                  class="absolute bottom-4 right-4 inline-flex size-6 items-center justify-center"
+                  aria-label="관심상품 담기"
+                >
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_2006_189)">
+                      <path
+                        d="M17 3H7C5.9 3 5.01 3.9 5.01 5L5 21L12 18L19 21V5C19 3.9 18.1 3 17 3ZM17 18L12 15.82L7 18V5H17V18Z"
+                        fill="currentColor"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_2006_189">
+                        <rect width="24" height="24" fill="none" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </button>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="flex flex-col gap-3 min-w-[180px] max-w-[240px]">
+              <a href="/" class="contents">
+                <div class="flex flex-col">
+                  <h2 class="text-2xl font-bold">Undermycar</h2>
+                  <p class="text-sm">
+                    Undermycar Mu.22 Anti Fxxking Logo Play Slim Inner Hood Zip-up Black
+                  </p>
+                </div>
+                <div class="flex gap-1.5">
+                  <span
+                    class="text-sm inline-flex items-center justify-center gap-1 rounded-sm border border-current p-1 align-middle"
+                    >적립</span
+                  >
+                  <span
+                    class="text-kream-green text-sm inline-flex items-center justify-center gap-1 rounded-sm border border-current p-1 align-middle"
+                  >
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M9.625 1.16669H5.54167L3.5 7.58335H6.41667L4.375 12.8334H5.25L9.91667 6.41669H7.29167L9.625 1.16669Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                    빠른 배송
+                  </span>
+                </div>
+                <div class="flex flex-wrap gap-x-3">
+                  <span class="hidden text-kream-red text-2xl font-bold not-italic"
+                    >10%<span class="sr-only">할인</span></span
+                  >
+                  <span class="text-sm order-1 w-full">구매가</span>
+                  <span class="text-2xl font-bold">89,000원</span>
+                </div>
+              </a>
+              <div class="relative -order-1">
+                <a href="/" class="bg-gray-200 block rounded-lg">
+                  <img
+                    src="/src/assets/kream/just-dropped/webp/dropped-product-05.webp"
+                    alt="Problemallways 상품"
+                  />
+                </a>
+                <button
+                  type="button"
+                  class="absolute bottom-4 right-4 inline-flex size-6 items-center justify-center"
+                  aria-label="관심상품 담기"
+                >
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_2006_189)">
+                      <path
+                        d="M17 3H7C5.9 3 5.01 3.9 5.01 5L5 21L12 18L19 21V5C19 3.9 18.1 3 17 3ZM17 18L12 15.82L7 18V5H17V18Z"
+                        fill="currentColor"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_2006_189">
+                        <rect width="24" height="24" fill="none" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </button>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="flex flex-col gap-3 min-w-[180px] max-w-[240px]">
+              <a href="/" class="contents">
+                <div class="flex flex-col">
+                  <h2 class="text-2xl font-bold">Supreme</h2>
+                  <p class="text-sm">Supreme Ultrasuede Mesh Baseball Jersey Navy - 24SS</p>
+                </div>
+                <div class="flex gap-1.5">
+                  <span
+                    class="text-sm inline-flex items-center justify-center gap-1 rounded-sm border border-current p-1 align-middle"
+                    >적립</span
+                  >
+                  <span
+                    class="text-kream-green text-sm inline-flex items-center justify-center gap-1 rounded-sm border border-current p-1 align-middle"
+                  >
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M9.625 1.16669H5.54167L3.5 7.58335H6.41667L4.375 12.8334H5.25L9.91667 6.41669H7.29167L9.625 1.16669Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                    빠른 배송
+                  </span>
+                </div>
+                <div class="flex flex-wrap gap-x-3">
+                  <span class="hidden text-kream-red text-2xl font-bold not-italic"
+                    >10%<span class="sr-only">할인</span></span
+                  >
+                  <span class="text-sm order-1 w-full">구매가</span>
+                  <span class="text-2xl font-bold">270,000원</span>
+                </div>
+              </a>
+              <div class="relative -order-1">
+                <a href="/" class="bg-gray-200 block rounded-lg">
+                  <img
+                    src="/src/assets/kream/just-dropped/webp/dropped-product-04.webp"
+                    alt="Problemallways 상품"
+                  />
+                </a>
+                <button
+                  type="button"
+                  class="absolute bottom-4 right-4 inline-flex size-6 items-center justify-center"
+                  aria-label="관심상품 담기"
+                >
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_2006_189)">
+                      <path
+                        d="M17 3H7C5.9 3 5.01 3.9 5.01 5L5 21L12 18L19 21V5C19 3.9 18.1 3 17 3ZM17 18L12 15.82L7 18V5H17V18Z"
+                        fill="currentColor"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_2006_189">
+                        <rect width="24" height="24" fill="none" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </button>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="flex flex-col gap-3 min-w-[180px] max-w-[240px]">
+              <a href="/" class="contents">
+                <div class="flex flex-col">
+                  <h2 class="text-2xl font-bold">Nike</h2>
+                  <p class="text-sm">
+                    Nike x Rayssa Leal SB Dunk Low PRM Pure Platinum Vivid Purple
+                  </p>
+                </div>
+                <div class="flex gap-1.5">
+                  <span
+                    class="text-sm inline-flex items-center justify-center gap-1 rounded-sm border border-current p-1 align-middle"
+                    >적립</span
+                  >
+                  <span
+                    class="text-kream-red text-sm inline-flex items-center justify-center gap-1 rounded-sm border border-current p-1 align-middle"
+                    >품절</span
+                  >
+                  <span
+                    class="text-kream-green text-sm inline-flex items-center justify-center gap-1 rounded-sm border border-current p-1 align-middle"
+                  >
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M9.625 1.16669H5.54167L3.5 7.58335H6.41667L4.375 12.8334H5.25L9.91667 6.41669H7.29167L9.625 1.16669Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                    빠른 배송
+                  </span>
+                </div>
+                <div class="flex flex-wrap gap-x-3">
+                  <span class="hidden text-kream-red text-2xl font-bold not-italic"
+                    >10%<span class="sr-only">할인</span></span
+                  >
+                  <span class="text-sm order-1 w-full">구매가</span>
+                  <span class="text-2xl font-bold">165,000원</span>
+                </div>
+              </a>
+              <div class="relative -order-1">
+                <a href="/" class="bg-gray-200 block rounded-lg">
+                  <img
+                    src="/src/assets/kream/just-dropped/webp/dropped-product-03.webp"
+                    alt="Problemallways 상품"
+                  />
+                </a>
+                <button
+                  type="button"
+                  class="absolute bottom-4 right-4 inline-flex size-6 items-center justify-center"
+                  aria-label="관심상품 담기"
+                >
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_2006_189)">
+                      <path
+                        d="M17 3H7C5.9 3 5.01 3.9 5.01 5L5 21L12 18L19 21V5C19 3.9 18.1 3 17 3ZM17 18L12 15.82L7 18V5H17V18Z"
+                        fill="currentColor"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_2006_189">
+                        <rect width="24" height="24" fill="none" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </button>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="flex flex-col gap-3 min-w-[180px] max-w-[240px]">
+              <a href="/" class="contents">
+                <div class="flex flex-col">
+                  <h2 class="text-2xl font-bold">Undermycar</h2>
+                  <p class="text-sm">
+                    Undermycar Mu.22 Anti Fxxking Logo Play Slim Inner Hood Zip-up Melange Gray
+                  </p>
+                </div>
+                <div class="flex gap-1.5">
+                  <span
+                    class="text-sm inline-flex items-center justify-center gap-1 rounded-sm border border-current p-1 align-middle"
+                    >적립</span
+                  >
+                  <span
+                    class="text-kream-green text-sm inline-flex items-center justify-center gap-1 rounded-sm border border-current p-1 align-middle"
+                  >
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 14 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M9.625 1.16669H5.54167L3.5 7.58335H6.41667L4.375 12.8334H5.25L9.91667 6.41669H7.29167L9.625 1.16669Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                    빠른 배송
+                  </span>
+                </div>
+                <div class="flex flex-wrap gap-x-3">
+                  <span class="hidden text-kream-red text-2xl font-bold not-italic"
+                    >10%<span class="sr-only">할인</span></span
+                  >
+                  <span class="text-sm order-1 w-full">구매가</span>
+                  <span class="text-2xl font-bold">89,000원</span>
+                </div>
+              </a>
+              <div class="relative -order-1">
+                <a href="/" class="bg-gray-200 block rounded-lg">
+                  <img
+                    src="/src/assets/kream/just-dropped/webp/dropped-product-02.webp"
+                    alt="Problemallways 상품"
+                  />
+                </a>
+                <button
+                  type="button"
+                  class="absolute bottom-4 right-4 inline-flex size-6 items-center justify-center"
+                  aria-label="관심상품 담기"
+                >
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_2006_189)">
+                      <path
+                        d="M17 3H7C5.9 3 5.01 3.9 5.01 5L5 21L12 18L19 21V5C19 3.9 18.1 3 17 3ZM17 18L12 15.82L7 18V5H17V18Z"
+                        fill="currentColor"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_2006_189">
+                        <rect width="24" height="24" fill="none" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </button>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </main>
+  </body>
+</html>
+
+<!-- <h1 class="text-2xl text-center mt-[300px] font-bold">TailwindCSS로 Kream 페이지 만들어보기</h1>
+    <ul class="flex flex-col flex-nowrap items-center mt-10">
+      <li><a href="./src/components/navigation.html">내이게이션 바 컴포넌트</a></li>
+      <li><a href="./src/components/recommand-img.html">추천 이미지 컴포넌트</a></li>
+      <li><a href="./src/components/recommand-card.html">추천 카드 컴포넌트</a></li>
+      <li><a href="./src/components/product-card.html">발매 상품 컴포넌트</a></li>
+    </ul> -->
